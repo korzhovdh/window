@@ -5,6 +5,7 @@ import forms from "./modules/forms";
 import changeModalState from "./modules/changeModalState";
 import timer from "./modules/timer";
 import images from "./modules/images";
+import validateForms from "./modules/validateForms";
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block' );
     timer('.container1', deadline);
     images();
+    validateForms();
     forms(modalState);
     
 });
